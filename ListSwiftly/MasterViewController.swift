@@ -158,7 +158,7 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
                 let object = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Task
                 object.isFinished = NSNumber(bool: false)
                 Model.sharedInstance.incrementStatKeeperTasks(true)
-                Model.sharedInstance.scheduleLocalNotificationWithTask(object.note, fireDate: object.dueDate, aTask: object)
+                //Model.sharedInstance.scheduleLocalNotificationWithTask(object.note, fireDate: object.dueDate, aTask: object)
                 Model.sharedInstance.save()
                 self.taskToPass = object
                 self.performSegueWithIdentifier(segueID.detailView.rawValue, sender: self)
