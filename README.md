@@ -1,2 +1,2 @@
 # ListSwiftly
-A list that's swift
+iOS application in Swift. A list that's swift.
